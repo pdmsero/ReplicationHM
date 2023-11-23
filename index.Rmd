@@ -1,0 +1,47 @@
+---
+title: "Derivation of Hsieh-Moretti Equilibrium Conditions"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Derivations
+## City production
+Solving for optimal production and labour demand and then labour supply from household decisions for each city $i$:
+### $\underline{\text{Labour demand}}$
+Production in each city is:
+$$\begin{equation} Y_{i}=A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta}, \end{equation}$$which can be used to write the "profit function" for each city:	  $$\begin{equation}\Pi_{i}=Y_{i}-W_{i}L_{i}-R_{i}K_{i}-P_{i}T_{i}=0.\end{equation}$$It is important to set this profit to zero because "cities" are assumed to be competitive and not earn excess rents.
+First-order conditions for this problem yield:  $$\begin{align*}\alpha Y_{i}&=W_{i}L_{i}\\ \eta Y_{i}&=R_{i}K_{i}\\ (1-\alpha-\eta) Y_{i}&=P_{i}T_{i}\end{align*}$$We can use these first order conditions to write:
+$$\alpha R_{i}K_{i}=\eta W_{i}L_{i}$$
+and from here replace $K_{i}$ in the conditions above: $$\begin{align*}\alpha Y_{i}=\alpha A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta}=W_{i}L_{i}\Rightarrow \\ \Rightarrow \alpha A_{i}L_{i}^{\alpha}\left(\frac{\eta}{\alpha}\frac{W_{i}}{R_{i}}L_{i}\right)^{\eta}T_{i}^{1-\alpha-\eta}=W_{i}L_{i}\Rightarrow \\ \Rightarrow L_{i}^{1-\alpha-\eta}=A_{i}\left(\frac{\alpha}{W_{i}}\right)^{1-\eta}\left( \frac{\eta}{R_{i}}\right)^{\eta}T_{i}^{1-\alpha-\eta}\Rightarrow \\ \Rightarrow L^{d}_{i}=A_{i}^{\frac{1}{1-\alpha-\eta}}T_{i}\left[\left(\frac{\alpha}{W_{i}}\right)^{1-\eta}\left( \frac{\eta}{R_{i}}\right)^{\eta} \right]^{\frac{1}{1-\alpha-\eta}}\end{align*}$$
+## Perfect mobility
+### $\underline{\text{Labour supply}}$
+Indirect utility is assumed to be given by:
+$$V=\frac{W_{i}Z_{i}}{P_{i}^{\beta}},$$with house prices driven by the following equation:$$P_{i}=\bar{P}_{i}L_{i}^{\gamma_{i}},$$where $\gamma_{i}$ is the elasticity of housing supply with respect to the total labour supply, and $\bar{P}_{i}$ the component of the house price that does not depend on utility.
+Replacing the equation for the local housing price in the equation for indirect utility and solving for the wage rate, we find the following equation for the labour supply:
+$$W^{s}_{i}=\frac{V}{Z_{i}} (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}.$$
+### $\underline{\text{Equilibrium}}$
+We begin by re-writing the equation for output in each city. This is given by:
+$$\begin{equation} Y_{i}=A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta}. \end{equation}$$The first order condition for labour implies:
+$$\begin{equation} \alpha Y_{i}=W_{i}L_{i}, \end{equation}$$
+which can be aggregated over all $i$ to result in:
+$$\begin{equation} \sum_{i}\alpha Y_{i}=\sum_{i}W_{i}L_{i} \end{equation} \Rightarrow \alpha = \frac{\sum_{i}W_{i}L_{i}}{\sum_{i} Y_{i}}$$From the definition of output, we can replace $Y_{i}$ with the FOC with respect to labour and the level of capital using the optimal relationship between capital and labour:
+$$\begin{align} \frac{L_{i}W_{i}}{\alpha}&=A_{i}L_{i}^{\alpha}\left(\frac{\eta}{\alpha}\frac{L_{i}W_{i}}{R}\right)^{\eta}T_{i}^{1-\alpha-\eta} \Rightarrow L_{i}^{1-\alpha-\eta}=\alpha^{1-\eta}A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1} \Rightarrow \\ \Rightarrow L_{i}&=\left[\alpha^{1-\eta}A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}} \end{align}$$
+Total labour supply is normalised to 1, which implies that $L=\sum_{i}L_{i}=1$. Aggregating labour supply over all cities, we can write:
+$$\begin{align}\sum_{i} L_{i}=1&=\alpha^{\frac{1-\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}}\Rightarrow \\ \Rightarrow 1&=\left(\frac{\sum_{i}W_{i}L_{i}}{\sum_{i} Y_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}}\Rightarrow \\ \Rightarrow \left(\sum_{i}Y_{i}\right)^{\frac{1-\eta}{1-\alpha-\eta}}&=\bar{W}^{\frac{\eta-1}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}} \Rightarrow \\ \Rightarrow Y^{\frac{1-\eta}{1-\alpha-\eta}}&=\left(\frac{\eta}{R}\right)^{\frac{\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\bar{W}}{W_{i}}\right)^{1-\eta}\right]^{\frac{1}{1-\alpha-\eta}} \Rightarrow \\ \Rightarrow Y&=\left(\frac{\eta}{R}\right)^{\frac{\eta}{1-\eta}}\left[\sum_{i}A_{i}^{\frac{1}{1-\alpha-\eta}}T_{i}\left(\frac{\bar{W}}{W_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\right]^{\frac{1-\alpha-\eta}{1-\eta}}\end{align}$$
+This expression can be written using $Q_{i}$ instead of $W_{i}$, as in the paper. Note that:
+$$\begin{align}W_{i}&=\frac{V}{Z_{i}} (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}
+\\
+Q_{i}&=\frac{1}{Z_{i}} (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}\end{align}.$$
+This implies that $W_{i}=VQ_{i}$. Using the first order condition for labour, we can find the expression for aggregate utility:
+$$\begin{equation} \alpha Y_{i}=W_{i}L_{i} \Rightarrow \alpha Y_{i}=V_{i}Q_{i}L_{i} \Rightarrow \alpha\sum_{i} Y_{i}=\sum_{i}V_{i}Q_{i}L_{i} \end{equation}.$$
+Imposing the condition that labour movement will ensure utility is constant across cities, we find:
+$$\begin{equation} V=\frac{\alpha Y}{\bar{Q}}\end{equation}.$$
+To conclude this section, we can write the amount of labour used in equilibrium in each city:
+$$\begin{align} L_{i}^{1-\alpha-\eta}&=\left(\frac{V}{Z_{i}} \bar{P}_{i}^{\beta}L_{i}^{\beta\gamma_{i}} \right)^{\eta-1}A_{i}\alpha^{1-\eta}\left( \frac{\eta}{R_{i}}\right)^{\eta}T_{i}^{1-\alpha-\eta} \Rightarrow \\ \Rightarrow L_{i}^{1-\alpha-\eta+(1-\eta)\beta\gamma_{i}} &=\left(\frac{V}{Z_{i}} \bar{P}_{i}^{\beta} \right)^{\eta-1}A_{i}\alpha^{1-\eta}\left( \frac{\eta}{R_{i}}\right)^{\eta}T_{i}^{1-\alpha-\eta} \Rightarrow \\ \Rightarrow L_{i}^{*}&=\left[A_{i}T_{i}^{1-\alpha-\eta} \left( \frac{\eta}{R_{i}}\right)^{\eta}\left(\frac{\alpha Z_{i}}{V \bar{P}_{i}^{\beta}}  \right)^{1-\eta}\right]^{\frac{1}{1-\alpha-\eta+(1-\eta)\beta\gamma_{i}}}\end{align}.$$
+## Imperfect mobility
+The model is then extended to account for imperfect mobility of labour. This leads to the following labour supply function:
+$$W^{s}_{i}=\frac{V}{Z_{i}} (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}L_{i}^{\frac{1}{\theta}}.$$

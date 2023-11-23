@@ -361,18 +361,24 @@ Conditions</h1>
 <div id="city-production" class="section level2">
 <h2>City production</h2>
 <p>Solving for optimal production and labour demand and then labour
-supply from household decisions for each city <span class="math inline">\(i\)</span>: ### <span class="math inline">\(\underline{\text{Labour demand}}\)</span>
-Production in each city is: <span class="math display">\[\begin{equation}
+supply from household decisions for each city <span class="math inline">\(i\)</span>:</p>
+<div id="underlinetextlabour-demand" class="section level3">
+<h3><span class="math inline">\(\underline{\text{Labour
+demand}}\)</span></h3>
+<p>Production in each city is: <span class="math display">\[\begin{equation}
 Y_{i}=A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta},
 \end{equation}\]</span>which can be used to write the “profit function”
-for each city: <span class="math display">\[\begin{equation}\Pi_{i}=Y_{i}-W_{i}L_{i}-R_{i}K_{i}-P_{i}T_{i}=0.\end{equation}\]</span>It
-is important to set this profit to zero because “cities” are assumed to
-be competitive and not earn excess rents. First-order conditions for
-this problem yield: <span class="math display">\[\begin{align*}\alpha
-Y_{i}&amp;=W_{i}L_{i}\\ \eta Y_{i}&amp;=R_{i}K_{i}\\ (1-\alpha-\eta)
+for each city: <span class="math display">\[\begin{equation}\Pi_{i}=Y_{i}-W_{i}L_{i}-R_{i}K_{i}-P_{i}T_{i}=0.\end{equation}\]</span></p>
+<p>It is important to set this profit to zero because “cities” are
+assumed to be competitive and not earn excess rents. First-order
+conditions for this problem yield: <span class="math display">\[\begin{align*}\alpha Y_{i}&amp;=W_{i}L_{i}\\ \eta
+Y_{i}&amp;=R_{i}K_{i}\\ (1-\alpha-\eta)
 Y_{i}&amp;=P_{i}T_{i}\end{align*}\]</span>We can use these first order
 conditions to write: <span class="math display">\[\alpha R_{i}K_{i}=\eta
-W_{i}L_{i}\]</span> and from here replace <span class="math inline">\(K_{i}\)</span> in the conditions above: <span class="math display">\[\begin{align*}\alpha Y_{i}=\alpha
+W_{i}L_{i}\]</span></p>
+<p>and from here replace <span class="math inline">\(K_{i}\)</span> in
+the conditions above: <span class="math display">\[\begin{align*}\alpha
+Y_{i}=\alpha
 A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta}=W_{i}L_{i}\Rightarrow
 \\ \Rightarrow \alpha
 A_{i}L_{i}^{\alpha}\left(\frac{\eta}{\alpha}\frac{W_{i}}{R_{i}}L_{i}\right)^{\eta}T_{i}^{1-\alpha-\eta}=W_{i}L_{i}\Rightarrow
@@ -382,36 +388,47 @@ L_{i}^{1-\alpha-\eta}=A_{i}\left(\frac{\alpha}{W_{i}}\right)^{1-\eta}\left(
 \Rightarrow
 L^{d}_{i}=A_{i}^{\frac{1}{1-\alpha-\eta}}T_{i}\left[\left(\frac{\alpha}{W_{i}}\right)^{1-\eta}\left(
 \frac{\eta}{R_{i}}\right)^{\eta}
-\right]^{\frac{1}{1-\alpha-\eta}}\end{align*}\]</span> ## Perfect
-mobility ### <span class="math inline">\(\underline{\text{Labour
-supply}}\)</span> Indirect utility is assumed to be given by: <span class="math display">\[V=\frac{W_{i}Z_{i}}{P_{i}^{\beta}},\]</span>with
-house prices driven by the following equation:<span class="math display">\[P_{i}=\bar{P}_{i}L_{i}^{\gamma_{i}},\]</span>where
-<span class="math inline">\(\gamma_{i}\)</span> is the elasticity of
-housing supply with respect to the total labour supply, and <span class="math inline">\(\bar{P}_{i}\)</span> the component of the house
-price that does not depend on utility. Replacing the equation for the
-local housing price in the equation for indirect utility and solving for
-the wage rate, we find the following equation for the labour supply:
-<span class="math display">\[W^{s}_{i}=\frac{V}{Z_{i}}
-(\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}.\]</span> ### <span class="math inline">\(\underline{\text{Equilibrium}}\)</span> We begin
-by re-writing the equation for output in each city. This is given by:
-<span class="math display">\[\begin{equation}
+\right]^{\frac{1}{1-\alpha-\eta}}\end{align*}\]</span></p>
+</div>
+</div>
+<div id="perfect-mobility" class="section level2">
+<h2>Perfect mobility</h2>
+<div id="underlinetextlabour-supply" class="section level3">
+<h3><span class="math inline">\(\underline{\text{Labour
+supply}}\)</span></h3>
+<p>Indirect utility is assumed to be given by: <span class="math display">\[V=\frac{W_{i}Z_{i}}{P_{i}^{\beta}},\]</span></p>
+<p>with house prices driven by the following equation: <span class="math display">\[P_{i}=\bar{P}_{i}L_{i}^{\gamma_{i}},\]</span></p>
+<p>where <span class="math inline">\(\gamma_{i}\)</span> is the
+elasticity of housing supply with respect to the total labour supply,
+and <span class="math inline">\(\bar{P}_{i}\)</span> the component of
+the house price that does not depend on utility. Replacing the equation
+for the local housing price in the equation for indirect utility and
+solving for the wage rate, we find the following equation for the labour
+supply: <span class="math display">\[W^{s}_{i}=\frac{V}{Z_{i}}
+(\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}.\]</span></p>
+</div>
+<div id="underlinetextequilibrium" class="section level3">
+<h3><span class="math inline">\(\underline{\text{Equilibrium}}\)</span></h3>
+<p>We begin by re-writing the equation for output in each city. This is
+given by: <span class="math display">\[\begin{equation}
 Y_{i}=A_{i}L_{i}^{\alpha}K_{i}^{\eta}T_{i}^{1-\alpha-\eta}.
-\end{equation}\]</span>The first order condition for labour implies:
-<span class="math display">\[\begin{equation} \alpha Y_{i}=W_{i}L_{i},
-\end{equation}\]</span> which can be aggregated over all <span class="math inline">\(i\)</span> to result in: <span class="math display">\[\begin{equation} \sum_{i}\alpha
+\end{equation}\]</span></p>
+<p>The first order condition for labour implies: <span class="math display">\[\begin{equation} \alpha Y_{i}=W_{i}L_{i},
+\end{equation}\]</span></p>
+<p>which can be aggregated over all <span class="math inline">\(i\)</span> to result in: <span class="math display">\[\begin{equation} \sum_{i}\alpha
 Y_{i}=\sum_{i}W_{i}L_{i} \end{equation} \Rightarrow \alpha =
-\frac{\sum_{i}W_{i}L_{i}}{\sum_{i} Y_{i}}\]</span>From the definition of
-output, we can replace <span class="math inline">\(Y_{i}\)</span> with
-the FOC with respect to labour and the level of capital using the
-optimal relationship between capital and labour: <span class="math display">\[\begin{align}
+\frac{\sum_{i}W_{i}L_{i}}{\sum_{i} Y_{i}}\]</span></p>
+<p>From the definition of output, we can replace <span class="math inline">\(Y_{i}\)</span> with the FOC with respect to labour
+and the level of capital using the optimal relationship between capital
+and labour: <span class="math display">\[\begin{align}
 \frac{L_{i}W_{i}}{\alpha}&amp;=A_{i}L_{i}^{\alpha}\left(\frac{\eta}{\alpha}\frac{L_{i}W_{i}}{R}\right)^{\eta}T_{i}^{1-\alpha-\eta}
 \Rightarrow
 L_{i}^{1-\alpha-\eta}=\alpha^{1-\eta}A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}
 \Rightarrow \\ \Rightarrow
 L_{i}&amp;=\left[\alpha^{1-\eta}A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}}
-\end{align}\]</span> Total labour supply is normalised to 1, which
-implies that <span class="math inline">\(L=\sum_{i}L_{i}=1\)</span>.
-Aggregating labour supply over all cities, we can write: <span class="math display">\[\begin{align}\sum_{i}
+\end{align}\]</span></p>
+<p>Total labour supply is normalised to 1, which implies that <span class="math inline">\(L=\sum_{i}L_{i}=1\)</span>. Aggregating labour
+supply over all cities, we can write: <span class="math display">\[\begin{align}\sum_{i}
 L_{i}=1&amp;=\alpha^{\frac{1-\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}}\Rightarrow
 \\ \Rightarrow 1&amp;=\left(\frac{\sum_{i}W_{i}L_{i}}{\sum_{i}
 Y_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\eta}{R}\right)^{\eta}W_{i}^{\eta-1}\right]^{\frac{1}{1-\alpha-\eta}}\Rightarrow
@@ -420,21 +437,23 @@ Y_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\
 \Rightarrow \\ \Rightarrow
 Y^{\frac{1-\eta}{1-\alpha-\eta}}&amp;=\left(\frac{\eta}{R}\right)^{\frac{\eta}{1-\alpha-\eta}}\sum_{i}\left[A_{i}T_{i}^{1-\alpha-\eta}\left(\frac{\bar{W}}{W_{i}}\right)^{1-\eta}\right]^{\frac{1}{1-\alpha-\eta}}
 \Rightarrow \\ \Rightarrow
-Y&amp;=\left(\frac{\eta}{R}\right)^{\frac{\eta}{1-\eta}}\left[\sum_{i}A_{i}^{\frac{1}{1-\alpha-\eta}}T_{i}\left(\frac{\bar{W}}{W_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\right]^{\frac{1-\alpha-\eta}{1-\eta}}\end{align}\]</span>
-This expression can be written using <span class="math inline">\(Q_{i}\)</span> instead of <span class="math inline">\(W_{i}\)</span>, as in the paper. Note that: <span class="math display">\[\begin{align}W_{i}&amp;=\frac{V}{Z_{i}}
+Y&amp;=\left(\frac{\eta}{R}\right)^{\frac{\eta}{1-\eta}}\left[\sum_{i}A_{i}^{\frac{1}{1-\alpha-\eta}}T_{i}\left(\frac{\bar{W}}{W_{i}}\right)^{\frac{1-\eta}{1-\alpha-\eta}}\right]^{\frac{1-\alpha-\eta}{1-\eta}}\end{align}\]</span></p>
+<p>This expression can be written using <span class="math inline">\(Q_{i}\)</span> instead of <span class="math inline">\(W_{i}\)</span>, as in the paper. Note that: <span class="math display">\[\begin{align}W_{i}&amp;=\frac{V}{Z_{i}}
 (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}
 \\
 Q_{i}&amp;=\frac{1}{Z_{i}}
-(\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}\end{align}.\]</span> This
-implies that <span class="math inline">\(W_{i}=VQ_{i}\)</span>. Using
-the first order condition for labour, we can find the expression for
-aggregate utility: <span class="math display">\[\begin{equation} \alpha
-Y_{i}=W_{i}L_{i} \Rightarrow \alpha Y_{i}=V_{i}Q_{i}L_{i} \Rightarrow
-\alpha\sum_{i} Y_{i}=\sum_{i}V_{i}Q_{i}L_{i} \end{equation}.\]</span>
-Imposing the condition that labour movement will ensure utility is
+(\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}\end{align}.\]</span></p>
+<p>This implies that <span class="math inline">\(W_{i}=VQ_{i}\)</span>.
+Using the first order condition for labour, we can find the expression
+for aggregate utility: <span class="math display">\[\begin{equation}
+\alpha Y_{i}=W_{i}L_{i} \Rightarrow \alpha Y_{i}=V_{i}Q_{i}L_{i}
+\Rightarrow \alpha\sum_{i} Y_{i}=\sum_{i}V_{i}Q_{i}L_{i}
+\end{equation}.\]</span></p>
+<p>Imposing the condition that labour movement will ensure utility is
 constant across cities, we find: <span class="math display">\[\begin{equation} V=\frac{\alpha
-Y}{\bar{Q}}\end{equation}.\]</span> To conclude this section, we can
-write the amount of labour used in equilibrium in each city: <span class="math display">\[\begin{align}
+Y}{\bar{Q}}\end{equation}.\]</span></p>
+<p>To conclude this section, we can write the amount of labour used in
+equilibrium in each city: <span class="math display">\[\begin{align}
 L_{i}^{1-\alpha-\eta}&amp;=\left(\frac{V}{Z_{i}}
 \bar{P}_{i}^{\beta}L_{i}^{\beta\gamma_{i}}
 \right)^{\eta-1}A_{i}\alpha^{1-\eta}\left(
@@ -445,10 +464,13 @@ L_{i}^{1-\alpha-\eta}&amp;=\left(\frac{V}{Z_{i}}
 \frac{\eta}{R_{i}}\right)^{\eta}T_{i}^{1-\alpha-\eta} \Rightarrow \\
 \Rightarrow L_{i}^{*}&amp;=\left[A_{i}T_{i}^{1-\alpha-\eta} \left(
 \frac{\eta}{R_{i}}\right)^{\eta}\left(\frac{\alpha Z_{i}}{V
-\bar{P}_{i}^{\beta}}  \right)^{1-\eta}\right]^{\frac{1}{1-\alpha-\eta+(1-\eta)\beta\gamma_{i}}}\end{align}.\]</span>
-## Imperfect mobility The model is then extended to account for
-imperfect mobility of labour. This leads to the following labour supply
-function: <span class="math display">\[W^{s}_{i}=\frac{V}{Z_{i}}
+\bar{P}_{i}^{\beta}}  \right)^{1-\eta}\right]^{\frac{1}{1-\alpha-\eta+(1-\eta)\beta\gamma_{i}}}\end{align}.\]</span></p>
+</div>
+</div>
+<div id="imperfect-mobility" class="section level2">
+<h2>Imperfect mobility</h2>
+<p>The model is then extended to account for imperfect mobility of
+labour. This leads to the following labour supply function: <span class="math display">\[W^{s}_{i}=\frac{V}{Z_{i}}
 (\bar{P}_{i}L_{i}^{\gamma_{i}})^{\beta}L_{i}^{\frac{1}{\theta}}.\]</span></p>
 </div>
 </div>
